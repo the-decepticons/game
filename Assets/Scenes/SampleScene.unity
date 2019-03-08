@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44556797, g: 0.4952467, b: 0.57414055, a: 1}
+  m_IndirectSpecularColor: {r: 0.44556767, g: 0.49524647, b: 0.57414037, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 17870769}
   - component: {fileID: 17870768}
   m_Layer: 0
-  m_Name: STable
+  m_Name: West Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 194402795}
   - component: {fileID: 194402794}
   m_Layer: 0
-  m_Name: Etable
+  m_Name: South Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 1298694095}
   - component: {fileID: 1298694094}
   m_Layer: 0
-  m_Name: NTable
+  m_Name: East Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 1826301339}
   - component: {fileID: 1826301338}
   m_Layer: 0
-  m_Name: WTable
+  m_Name: North Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
