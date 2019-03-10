@@ -19,7 +19,7 @@ public class PickupScript : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && itemHeld)
         {
             //TO DO - Currently only checks for specific testveg name
-            Destroy(gameObject.transform.Find("TestVeg(Clone)").gameObject);
+            dropCurrentObject();
             itemHeld = false;
         }
     }
@@ -28,7 +28,8 @@ public class PickupScript : MonoBehaviour
     void OnTriggerEnter(Collider coll)
     {
         //TO DO - Currently only checks for specific testveg name
-        if (coll.gameObject.name.Equals("TestVeg")){
+        if (coll.gameObject.name.Equals("TestVeg") || coll.gameObject.name.Equals("TestVeg(Clone)"))
+        {
             interactableInRange = true;
             interactObject = coll.gameObject;
         }
@@ -45,6 +46,13 @@ public class PickupScript : MonoBehaviour
 
     void pickUpCurrentObject()
     {
+        interactObject.transform.GetComponent<Rigidbody>().isKinematic = true;
         Instantiate(interactObject, gameObject.transform.GetChild(3).position, new Quaternion(), this.gameObject.transform);
+    }
+
+    void dropCurrentObject()
+    {
+        gameObject.transform.Find("TestVeg(Clone)").GetComponent<Rigidbody>().isKinematic = false;
+        gameObject.transform.Find("TestVeg(Clone)").parent = null;
     }
 }
