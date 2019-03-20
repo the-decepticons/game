@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 85f9a462786bb45a8a0a57494d462120
+guid: f2bd613470e894e43960d655cac60b0d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Backpack
-    100002: Boy01_Body_Geo
-    100004: Boy01_Brows_Geo
-    100006: Boy01_Eyes_Geo
-    100008: BoyFacialAnim_Joint
-    100010: //RootNode
+    100000: //RootNode
+    100002: Backpack
+    100004: Boy01_Body_Geo
+    100006: Boy01_Brows_Geo
+    100008: Boy01_Eyes_Geo
+    100010: BoyFacialAnim_Joint
     100012: h_Geo
     100014: HairA
     100016: HairB
@@ -82,12 +82,12 @@ ModelImporter:
     100152: Spine
     100154: Spine1
     100156: Spine2
-    400000: Backpack
-    400002: Boy01_Body_Geo
-    400004: Boy01_Brows_Geo
-    400006: Boy01_Eyes_Geo
-    400008: BoyFacialAnim_Joint
-    400010: //RootNode
+    400000: //RootNode
+    400002: Backpack
+    400004: Boy01_Body_Geo
+    400006: Boy01_Brows_Geo
+    400008: Boy01_Eyes_Geo
+    400010: BoyFacialAnim_Joint
     400012: h_Geo
     400014: HairA
     400016: HairB
