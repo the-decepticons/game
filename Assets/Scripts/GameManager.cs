@@ -40,12 +40,12 @@ public class GameManager : MonoBehaviour
 
     private void SpawnFood()
     {
-        Instantiate(m_FoodObject[0], m_FoodSpawnLocation[0].transform.position, m_FoodSpawnLocation[0].transform.rotation);
-        Instantiate(m_FoodObject[1], m_FoodSpawnLocation[1].transform.position, m_FoodSpawnLocation[0].transform.rotation);
-        Instantiate(m_FoodObject[2], m_FoodSpawnLocation[2].transform.position, m_FoodSpawnLocation[0].transform.rotation);
-        Instantiate(m_FoodObject[3], m_FoodSpawnLocation[3].transform.position, m_FoodSpawnLocation[0].transform.rotation);
-        Instantiate(m_FoodObject[4], m_FoodSpawnLocation[4].transform.position, m_FoodSpawnLocation[0].transform.rotation);
-        Instantiate(m_FoodObject[5], m_FoodSpawnLocation[5].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.avocado], m_FoodSpawnLocation[0].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.banana], m_FoodSpawnLocation[1].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.mushroom], m_FoodSpawnLocation[2].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.onion], m_FoodSpawnLocation[3].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.pepper], m_FoodSpawnLocation[4].transform.position, m_FoodSpawnLocation[0].transform.rotation);
+        Instantiate(m_FoodObject[(int)FoodType.tomato], m_FoodSpawnLocation[5].transform.position, m_FoodSpawnLocation[0].transform.rotation);
     }
 
 
