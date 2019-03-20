@@ -63,7 +63,8 @@
     <Compile Include="Assets\Scripts\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\CodeView.cs" />
     <Compile Include="Assets\Scripts\ConveyorBelt.cs" />
-    <Compile Include="Assets\Scripts\FruitManager.cs" />
+    <Compile Include="Assets\Scripts\FoodManager.cs" />
+    <Compile Include="Assets\Scripts\FoodType.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\interactFruit.cs" />

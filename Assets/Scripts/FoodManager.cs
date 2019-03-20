@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class FruitManager
+public class FoodManager
 {
 
 }
