@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MessageText: {fileID: 0}
-  m_PlayerObject: {fileID: 8611156859021310092, guid: fae2266b8e7884656ab0ab98085aa823,
+  m_PlayerObject: {fileID: 3733546473249067814, guid: 09b627ce767da4911b4fa7f157169f45,
     type: 3}
   m_FoodObject:
   - {fileID: 3029993879498544865, guid: 2a2100f0a043b40ed873a2e1d98fd7d8, type: 3}
@@ -315,8 +315,8 @@ GameObject:
   - component: {fileID: 160674245}
   - component: {fileID: 160674244}
   - component: {fileID: 160674243}
-  - component: {fileID: 160674242}
   - component: {fileID: 160674241}
+  - component: {fileID: 160674242}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -407,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160674240}
   m_LocalRotation: {x: 0.0029900593, y: -0, z: -0, w: 0.9999955}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1558738135}
