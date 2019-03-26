@@ -376,6 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8611156859021534376}
   - component: {fileID: 8611156859034973580}
+  - component: {fileID: 5931087699553512838}
   m_Layer: 0
   m_Name: Boy01_Body_Geo
   m_TagString: Untagged
@@ -519,6 +520,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00005340576, y: 9.384476, z: -3.4350786}
     m_Extent: {x: 82.9395, y: 93.0537, z: 29.484146}
   m_DirtyAABB: 0
+--- !u!64 &5931087699553512838
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611156859021310088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &8611156859021310090
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +701,7 @@ GameObject:
   - component: {fileID: 7301540733874024129}
   - component: {fileID: 557080137}
   - component: {fileID: 557080139}
+  - component: {fileID: 7261208452043594121}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -700,7 +716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8611156859021310092}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_Children:
@@ -711,7 +727,7 @@ Transform:
   - {fileID: 8611156859021534394}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8611156859030817612
 Animator:
   serializedVersion: 3
@@ -755,7 +771,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8611156859021310092}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 120, y: 200, z: 120}
@@ -786,6 +802,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 12
   m_TurnSpeed: 180
+--- !u!136 &7261208452043594121
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611156859021310092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 40
+  m_Height: 200
+  m_Direction: 1
+  m_Center: {x: 0, y: 100, z: 0}
 --- !u!1 &8611156859021310094
 GameObject:
   m_ObjectHideFlags: 0

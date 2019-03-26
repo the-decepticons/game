@@ -7,11 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public float m_Speed = 12f;
     public float m_TurnSpeed = 180f;
 
-    private string m_MovementAxisName;
-    private string m_TurnAxisName;
     private Rigidbody m_Rigidbody;
 
     static Animator anim;
+
+    private Vector3 moveDirection;
+    private Vector3 input;
 
     private void Awake()
     {
@@ -26,21 +27,34 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        m_MovementAxisName = "Vertical";
-        m_TurnAxisName = "Horizontal";
         anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        float translation = Input.GetAxis(m_MovementAxisName) * m_Speed;
-        float rotation = Input.GetAxis(m_TurnAxisName) * m_TurnSpeed;
-        translation *= Time.deltaTime;
-        rotation *= Time.deltaTime;
-        transform.Translate(0, 0, translation);
-        transform.Rotate(0, rotation, 0);
 
-        if (translation > 0 || translation < 0)
+        input = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (input != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(input);
+        }
+
+        Vector3 movement = transform.forward * input.magnitude * m_Speed * Time.deltaTime;
+
+
+        m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
+
+       // moveDirection = transform.TransformDirection(input);
+
+        //transform.Translate(moveDirection * Time.deltaTime * m_Speed);
+
+
+        if (input != Vector3.zero)
         {
             anim.SetBool("isRunning", true);
         }
