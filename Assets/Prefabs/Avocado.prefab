@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3053027696627247085}
   - component: {fileID: 2694864411055045225}
   - component: {fileID: 3254930750204915914}
+  - component: {fileID: 6090528333519051942}
   m_Layer: 0
   m_Name: Avocado
   m_TagString: Untagged
@@ -109,3 +110,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6090528333519051942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029993879498544865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6243b6c4188ca4d8c427e22ace9167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theDest: {fileID: 0}
