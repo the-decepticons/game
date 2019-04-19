@@ -27,6 +27,7 @@ ExportedObj/
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
+<<<<<<< HEAD
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -34,3 +35,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+=======
+>>>>>>> 2c7025eec8a124b5005e00115eb878330030afb4
